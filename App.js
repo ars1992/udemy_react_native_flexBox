@@ -6,7 +6,7 @@ export default class App extends Component {
     return (
       <View style={styles.container}>
         <View style={[styles.box, { backgroundColor: 'blue' }]} />
-        <View style={[styles.box, {height: 150, backgroundColor: 'red' }]} />
+        <View style={[styles.box, {height: 150, alignSelf: 'center', backgroundColor: 'red' }]} />
         <View style={[styles.box, { backgroundColor: 'green' }]} />
       </View>
     );

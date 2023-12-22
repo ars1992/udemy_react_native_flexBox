@@ -17,7 +17,8 @@ export default class App extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    flexDirection: 'row-reverse'
+    flexDirection: 'row-reverse',
+    justifyContent: 'center'
   },
   box: {
     height: 100,

@@ -5,11 +5,11 @@ export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <View style={{ width: '100%', height: 150, backgroundColor: 'blue' }} />
-        <View style={{ width: '80%', height: 150, backgroundColor: 'red' }} />
-        <View style={{ width: '60%', height: 150, backgroundColor: 'green' }} />
-        <View style={{ width: '40%', height: 150, backgroundColor: 'gray' }}>
-          <View style={{ width: '60%', height: '60%', backgroundColor: 'darkgreen' }} />
+        <View style={{ flex: 1, backgroundColor: 'blue' }} />
+        <View style={{ flex: 1, backgroundColor: 'red' }} />
+        <View style={{ flex: 1, backgroundColor: 'green' }} />
+        <View style={{ flex: 1, backgroundColor: 'gray' }}>
+          <View style={{ flex: 0.5, backgroundColor: 'darkgreen' }} />
         </View>
       </View>
     );
@@ -19,6 +19,7 @@ export default class App extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    paddingTop: 75,
+    flex: 1,
+    paddingTop: 0,
   },
 });

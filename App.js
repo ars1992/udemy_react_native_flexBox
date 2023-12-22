@@ -5,7 +5,10 @@ export default class App extends Component{
   render(){
     return (
       <View style={styles.container}>
-        <View></View>
+        <View style={{width: 150, height: 150, backgroundColor: 'blue'}}/>
+        <View style={{width: 150, height: 150, backgroundColor: 'red'}}/>
+        <View style={{width: 150, height: 150, backgroundColor: 'green'}}/>
+        <View style={{width: 150, height: 150, backgroundColor: 'gray'}}/>
       </View>
     );
   }
@@ -14,6 +17,6 @@ export default class App extends Component{
 
 const styles = StyleSheet.create({
   container: {
-
+    paddingTop: 75,
   },
 });

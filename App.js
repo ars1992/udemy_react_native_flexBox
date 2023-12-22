@@ -18,7 +18,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     flexDirection: 'row-reverse',
-    justifyContent: 'center'
+    justifyContent: 'space-between',
+    alignItems: 'center'
   },
   box: {
     height: 100,

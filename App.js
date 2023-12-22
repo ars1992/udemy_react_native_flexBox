@@ -5,12 +5,9 @@ export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <View style={{ flex: 1, backgroundColor: 'blue' }} />
-        <View style={{ flex: 1, backgroundColor: 'red' }} />
-        <View style={{ flex: 1, backgroundColor: 'green' }} />
-        <View style={{ flex: 1, backgroundColor: 'gray' }}>
-          <View style={{ flex: 0.5, backgroundColor: 'darkgreen' }} />
-        </View>
+        <View style={[styles.box, { backgroundColor: 'blue' }]} />
+        <View style={[styles.box, { backgroundColor: 'red' }]} />
+        <View style={[styles.box, { backgroundColor: 'green' }]} />
       </View>
     );
   }
@@ -20,6 +17,10 @@ export default class App extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingTop: 0,
+    flexDirection: 'row-reverse'
   },
+  box: {
+    height: 100,
+    width: 100,
+  }
 });
